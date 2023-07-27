@@ -227,7 +227,20 @@ ID RULES
     text-align: left;
   }
   .relevant-courses{
-    margin: 
+    width: 100%;
+    margin: unset;
     text-align: left;
     padding-left: 30px;
+}
+
+.schools{
+    width: unset; /* Adjust the width as needed */   
+
+}
+
+img.icon {
+    margin-right: 5px;
+    margin-left: 5px;
+
+  }
 }
