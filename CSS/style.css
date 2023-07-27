@@ -209,8 +209,6 @@ ID RULES
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 .sling {
     display: grid;
-    -webkit-padding-start: 100px;
-    -webkit-margin-before: 0;
   }
 
   #header {
