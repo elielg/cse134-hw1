@@ -24,7 +24,7 @@ section{
 }
 
 main {
-    padding-top: 200px;
+    padding-top: 16vh;
 }
 
 
@@ -36,6 +36,8 @@ a {
 a img {
     border: none;
 }
+
+
 
 img.icon {
     width: 100px;
@@ -63,7 +65,7 @@ img.icon {
     list-style: none;
     text-decoration: underline;
     text-underline-position: under;
-    padding-bottom: 5px; 
+    padding-bottom: 5vh; 
     display: flex;
     padding: 0;
     position: absolute;
@@ -95,6 +97,15 @@ li {
     text-align: left;
     padding-left: 300px;
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    border: 1px solid black; 
+    text-align: center;
+    align-items: start;   
+}
+
 
 /*
 ID RULES 
@@ -146,12 +157,14 @@ ID RULES
 }
 
   #resume{
+    margin: 0 auto;
     line-height: 50px;
     text-align: center;
     background-color: #EDF4F2;
     color: #333333;
   }
 
+  
 
   #about-me{
     width: 50%; /* Adjust the width as needed */
