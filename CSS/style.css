@@ -209,7 +209,7 @@ ID RULES
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 .sling {
     display: grid;
-    grid-template-columns: 1 fr 1 fr
+    grid-template-columns: repeat(2, 1fr)
    
   }
 
