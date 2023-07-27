@@ -211,7 +211,7 @@ ID RULES
       display: none;
     }
   
-    .mobile-nav {
+    .sling {
       display: inline-block;
       -webkit-padding-start: 5px;
       -webkit-margin-before: 0;
@@ -232,7 +232,7 @@ ID RULES
         display: none;
       }
     
-      .mobile-nav {
+      .sling {
         display: inline-block;
         -webkit-padding-start: 5px;
         -webkit-margin-before: 0;
