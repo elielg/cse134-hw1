@@ -210,11 +210,13 @@ ID RULES
 .sling {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
   }
 
   #header {
 
-    text-align: left;
+    text-align: center;
     padding-left: 10px;
     padding-bottom: 15px;
   }
