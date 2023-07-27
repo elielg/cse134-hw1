@@ -31,39 +31,65 @@
 	<main>
 
 		<section id="about">
-			<h2 class = "sections-tiles">About</h2>
-			<img id="portrait" src="images/self.jpg">
+			<h2 class="sections-tiles">About</h2>
+			<picture>
+				<!-- Source for desktop -->
+				<source class="portrait" media="(min-width: 768px)" srcset="images/self_desktop.jpg">
 
-			<p id = "about-me">Dedicated individual who spent three years 
-				at a community college before transfering to the University of California, San Diego. Throughout my academic 
-				journey, I worked part-time, which has honed my time management skills 
-				and taught me the importance of balancing responsibilities effectively. 
-				I take pride in being a good team worker, as collaboration and cooperation 
-				are essential values I believe in. I am always eager to contribute my skills 
-				and knowledge to help achieve common goals and create a positive impact. 
-				My passion for learning, strong work ethic, and excellent time management 
+				<!-- Source for mobile phones -->
+				<source class="portrait" media="(max-width: 767px)" srcset="images/self_tablet.jpg">
+
+				<!-- Default image if no matching source is found (optional) -->
+				<img class="portrait" src="images/self_tablet.jpg" alt="Portrait Image">
+			</picture>
+
+			<p id="about-me">Dedicated individual who spent three years
+				at a community college before transfering to the University of California, San Diego. Throughout my
+				academic
+				journey, I worked part-time, which has honed my time management skills
+				and taught me the importance of balancing responsibilities effectively.
+				I take pride in being a good team worker, as collaboration and cooperation
+				are essential values I believe in. I am always eager to contribute my skills
+				and knowledge to help achieve common goals and create a positive impact.
+				My passion for learning, strong work ethic, and excellent time management
 				abilities drive me to seek new opportunities and make a difference in the world.
-				</p>
-			
+			</p>
+
 		</section>
 
 
 		<section id="resume">
-			<h2 class = "sections-tiles">Resume</h2>
+			<h2 class="sections-tiles">Resume</h2>
 
 
 			<br>
-			<h3 class = "schools">
-				<a target="_blank" href="https://ucsd.edu"><img class="icon" src="images/triton.jpg"></a>
+			<h3 class="schools">
+				<a target="_blank" href="https://ucsd.edu">
+
+					<picture>
+						<!-- Source for desktop -->
+						<source class="icon" media="(min-width: 768px)" srcset="images/triton.jpg">
+
+						<!-- Source for mobile phones -->
+						<source class="icon" media="(max-width: 767px)" srcset="images/self_phone.jpg">
+
+						<!-- Default image if no matching source is found (optional) -->
+						<img class="icon" src="images/triton.jpg" alt="Portrait Image">
+					</picture>
+				</a>
+
 				<b>University of California, San Diego (2020 - PRESENT)</b>
+				<br>
+				<br>
+				<p>Relevant Courses</p>
 			</h3>
-		
-			<h2 class = "in-title">Relevant Coursework</h2>
-			<ul class = "relevant-courses">
+
+
+			<ul class="relevant-courses">
 				<li>Advanced Data Structures</li>
 				<li>Design & Analysis of Algorithms</li>
 				<li>Theory of Computation</li>
-				<li>Software Engineering</li> 
+				<li>Software Engineering</li>
 				<li>Principles of Computer Operating Systems</li>
 				<li>Intro to Computer Security</li>
 				<li>Database System Principles</li>
@@ -72,64 +98,80 @@
 				<li>Data Science in Practice</li>
 				<li>Web Client Languages</li>
 				<li>Online Database Analytics</li>
-			
-			</ul>
-	
-			<br> 
 
-			<h3 class = "schools">
-				<a target="_blank" href="https://pasadena.edu"><img class="icon" src="images/pasadena.png"></a>
+			</ul>
+
+			<br>
+
+			<h3 class="schools">
+				<a target="_blank" href="https://pasadena.edu">
+					<a target="_blank" href="https://ucsd.edu">
+
+						<picture>
+							<!-- Source for desktop -->
+							<source class="icon" media="(min-width: 768px)" srcset="images/pasadena.jpg">
+
+							<!-- Source for mobile phones -->
+							<source class="icon" media="(max-width: 767px)" srcset="images/pasadena_phone.jpg">
+
+							<!-- Default image if no matching source is found (optional) -->
+							<img class="icon" src="images/pasadena.jpg" alt="Portrait Image">
+						</picture>
+					</a>
+
+
+				</a>
 				<b>Pasade City College (2017-2020) </b>
 			</h3>
-	
-	
+
+
 
 		</section>
 
 
 
 
-		<section id = "projects">
-			<h2 class = "sections-tiles">Projects</h2>
+		<section id="projects">
+			<h2 class="sections-tiles">Projects</h2>
 			<section class="grid-container">
-				<div class = "grid-col">
+				<div class="grid-col">
 					<b>Database</b>
 					<br>
-					<iframe width="410" height="190" src="https://www.youtube.com/embed/ES2FfCJUnxM" 
-					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+					<iframe width="410" height="190" src="https://www.youtube.com/embed/ES2FfCJUnxM"
+						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 					encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
-				<div class = "grid-col">
+				<div class="grid-col">
 					<b>Graphing Calculator</b>
 					<br>
-					<iframe width="410" height="190" src="https://www.youtube.com/embed/KV7ENnARh5M" 
-					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+					<iframe width="410" height="190" src="https://www.youtube.com/embed/KV7ENnARh5M"
+						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 					encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
-				<div class = "grid-col">
+				<div class="grid-col">
 					<b>Interactive Game</b>
 					<br>
 					<iframe width="410" height="190" src="https://www.youtube.com/embed/7JtNTLFlBC0"
-					 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 					 encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
-				<div class = "grid-col">
+				<div class="grid-col">
 					<b>9-bit Processor</b>
 					<br>
-					<iframe width="410" height="190" src="https://www.youtube.com/embed/2k7pQi9XYrc" 
-					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+					<iframe width="410" height="190" src="https://www.youtube.com/embed/2k7pQi9XYrc"
+						title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
 					encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 			</section>
 
-			
+
 		</section>
 
 
 
-		<section id = "skills">
-			<h2 class = "sections-tiles">Skills</h2>
-			<ol>
+		<section id="skills">
+			<h2 class="sections-tiles">Skills</h2>
+			<ol id="all-skills">
 				<li>First Skill</li>
 				<li>Second Skill</li>
 				<li>Third Skill</li>
@@ -145,8 +187,8 @@
 
 
 
-		<section id = "contact">
-			<h2 class = "sections-tiles">Contact Information</h2>
+		<section id="contact">
+			<h2 class="sections-tiles">Contact Information</h2>
 			<p>
 				<strong>Email:</strong> <a href="mailto:eliel.granados@example.com">eliel.granados@example.com</a>
 			</p>

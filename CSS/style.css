@@ -1,9 +1,65 @@
+:root {
+    --green: #31473A;
+    --light-green: #7C8363;
+    --white: #EDF4F2;
+    ;
+    --black: #333333;
+
+}
+/*
+FONTS
+*/
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    font-style: bold;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/static/Montserrat-Italic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/HindMadurai-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Hind Madurai";
+    font-style: bold;
+    font-weight: 400;
+    src: url("../fonts/Montserrat/HindMadurai-SemiBold.ttf") format("truetype");
+  }
+
+
+
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
 
+#contact a[href^="tel:"] {
+    color: white;
+}
+
+/* Targeting the email address link */
+#contact a[href^="mailto:"] {
+    color: white;
+}
 
 /*
 TAG RULES 
@@ -14,10 +70,10 @@ body {
     line-height: 20px;
     background-color: #ffffff;
     -webkit-font-smoothing: antialiased;
- 
+
 }
 
-section{
+section {
     scroll-margin-top: 20vh;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -48,24 +104,26 @@ img.icon {
     opacity: 0.8;
     z-index: 0;
     filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);   /*For Webkit browsers */
-    filter: gray;  /* For IE 6 - 9 */
+    -webkit-filter: grayscale(100%);
+    /*For Webkit browsers */
+    filter: gray;
+    /* For IE 6 - 9 */
     -webkit-transition: all .4s ease;
     margin-right: 30px;
 
-  }
+}
 
-  img.icon:hover {
+img.icon:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     filter: none;
-  }
+}
 
 .sling {
     list-style: none;
     text-decoration: underline;
     text-underline-position: under;
-    padding-bottom: 5vh; 
+    padding-bottom: 5vh;
     display: flex;
     padding: 0;
     position: absolute;
@@ -74,39 +132,75 @@ img.icon {
     transform: translate(-50%, -50%);
 }
 
+.portrait {
+    height: 20vh;
+    width: 20vh;
+    /* Assuming the width and height are the same for a perfect circle */
+    float: right;
+    /* 80px top and bottom margin, 0 left and right margin */
+    border-radius: 50%;
+    margin-right: -8vh;
+    margin-top: -2vh;
+    
+}
+
+
 li {
     margin-right: 100px;
 }
 
-.schools{
+.school-logos{
+    width: 100px;
+    float: left;
+    display: block;
+    background-color: #fff;
+    opacity: 0.8;
+    z-index: 0;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /*For Webkit browsers */
+    filter: gray;
+    /* For IE 6 - 9 */
+    -webkit-transition: all .4s ease;
+    margin-right: 30px;
+}
+
+.schools {
     text-decoration: underline;
-    width: 50%; /* Adjust the width as needed */
+    width: 50%;
+    /* Adjust the width as needed */
     margin: 0 auto;
     text-align: left;
+    font-family: "Hind Madurai";
 
 }
 
-.sections-tiles{
+.sections-tiles {
     text-align: center;
-}
-.in-title{
-    text-align: left;
+    text-decoration: underline;
+    font-family: "Montserrat";
 }
 
-.relevant-courses{
-    list-style:circle;
-    width: 50%; /* Adjust the width as needed */
+
+.relevant-courses {
+    list-style: circle;
+    width: 50%;
+    /* Adjust the width as needed */
     margin: 0 auto;
     text-align: left;
     padding-left: 300px;
+    font-family: "Hind Madurai";
+    font-size: 12pt;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    border: 1px solid black; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border: 1px solid black;
     text-align: center;
-    align-items: start;   
+    align-items: start;
+    font-family: "Hind Madurai";
+    font-size: 12pt;
 }
 
 
@@ -125,8 +219,9 @@ ID RULES
     line-height: 100px;
     font-size: 15px;
     z-index: 1000;
-    padding-top:unset;
+    padding-top: unset;
     padding-bottom: 20px;
+    font-family: "Montserrat";
 }
 
 
@@ -141,60 +236,69 @@ ID RULES
 #about {
     text-align: center;
     line-height: 25px;
-    background-color: #31473A;
+    background-color: var(--green);
+    ;
     color: white;
-  /*  background-color: #495266; gray blue*/
-  /*  background-color: #464C57; light gray blue*/
-   
-  }
+    font-family: "Hind Madurai";
+    /*  background-color: #495266; gray blue*/
+    /*  background-color: #464C57; light gray blue*/
 
-  #portrait{
-    height: 20vh;
-    width: 20vh; /* Assuming the width and height are the same for a perfect circle */
-    float: right;
-    margin: 80px 0; /* 80px top and bottom margin, 0 left and right margin */
-    border-radius: 50%;
-    float: right;
-    margin: -5% 10% 10px 10px;
 }
 
-  #resume{
+
+
+#resume {
     margin: 0 auto;
     line-height: 50px;
     text-align: center;
-    background-color: #EDF4F2;
+    background-color: var(--white);
     color: #333333;
-  }
+}
 
-  
 
-  #about-me{
-    width: 50%; /* Adjust the width as needed */
+
+#about-me {
+    width: 50%;
+    /* Adjust the width as needed */
     margin: 0 auto;
-  }
-  #projects{
-    background-color: #7C8363;
+    font-size: 15pt;
+}
+
+#projects {
+    background-color: var(--light-green);
+    ;
     color: white;
-  }
+}
 
-  #skills{
-     background-color: #EDF4F2;
-  }
+#skills {
+    background-color: var(--white);
+    ;
+}
 
-  #contact{
+#all-skills{
+    font-family: "Hind Madurai";
+    font-size: 12pt;
+}
+#contact {
     text-align: center;
-  }
-  #illustration img {
+    background-color: var(--green);
+    color: white;
+    font-family: "Hind Madurai";
+    font-size: 12pt;
+
+}
+
+#illustration img {
     padding-top: 150px;
     width: 50%;
-    min-width:800px;
-  }
+    min-width: 800px;
+}
 
 
 
 
 
-  
+
 #footer {
     background: #fafafa;
     min-height: 50px;
@@ -206,41 +310,133 @@ ID RULES
 }
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
-.sling {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-  }
 
-  #header {
+@media screen and (max-width:700px) {
+    .sling {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
 
-    text-align: left;
-    padding-left: 10px;
-    padding-bottom: 10%;
-    line-height:50px;
+    #header {
 
-  }
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10%;
+        line-height: 50px;
 
-  #resume{
-    text-align: left;
-  }
-  .relevant-courses{
-    width: 100%;
-    margin: unset;
-    text-align: left;
-    padding-left: 30px;
+    }
+
+    #resume {
+        text-align: left;
+    }
+
+    .relevant-courses {
+        width: 100%;
+        margin: unset;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .schools {
+        width: unset;
+        /* Adjust the width as needed */
+
+    }
+
+    img.icon {
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+
+
 }
 
-.schools{
-    width: unset; /* Adjust the width as needed */   
+@media (max-width: 480px) {
+    .sling {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header {
+
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10%;
+        line-height: 50px;
+
+    }
+
+    #resume {
+        text-align: left;
+    }
+
+    .relevant-courses {
+        width: 100%;
+        margin: unset;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .schools {
+        width: unset;
+        /* Adjust the width as needed */
+
+    }
+
+    img.icon {
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+
+
 
 }
 
-img.icon {
-    margin-right: 5px;
-    margin-left: 5px;
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .sling {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
 
-  }
+    #header {
+
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10%;
+        line-height: 50px;
+
+    }
+
+    #resume {
+        text-align: left;
+    }
+
+    .relevant-courses {
+        width: 100%;
+        margin: unset;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .schools {
+        width: unset;
+        /* Adjust the width as needed */
+
+    }
+
+    img.icon {
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+
+
 }
