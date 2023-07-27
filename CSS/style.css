@@ -86,6 +86,9 @@ li {
 
 }
 
+.sections-tiles{
+    text-align: center;
+}
 .in-title{
     text-align: left;
 }
@@ -173,6 +176,14 @@ ID RULES
   #projects{
     background-color: #7C8363;
     color: white;
+  }
+
+  #skills{
+     background-color: #EDF4F2;
+  }
+
+  #contact{
+
   }
   #illustration img {
     padding-top: 150px;
