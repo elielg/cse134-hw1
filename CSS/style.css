@@ -126,7 +126,7 @@ ID RULES
     font-size: 15px;
     z-index: 1000;
     padding-top:unset;
-    padding-bottom: unset;
+    padding-bottom: 20px;
 }
 
 
@@ -216,7 +216,7 @@ ID RULES
 
   #header {
 
-    text-align: center;
+    text-align: left;
     padding-left: 10px;
     padding-bottom: 15px;
     line-height:50px;
