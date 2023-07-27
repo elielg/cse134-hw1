@@ -205,47 +205,7 @@ ID RULES
     line-height: 20px;
 }
 
-@media (max-width: 480px) {
-  
-    .toc-holder {
-      display: none;
-    }
-  
-    .sling {
-      display: inline-block;
-      -webkit-padding-start: 5px;
-      -webkit-margin-before: 0;
-      float: right;
-    }
-  
-    #header {
-      line-height: 30px;
-      padding-top: 30px;
-      text-align: left;
-      padding-left: 10px;
-      padding-bottom: 15px;
-    }
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
-    /* STYLES GO HERE */
-      .toc-holder {
-        display: none;
-      }
-    
-      .sling {
-        display: inline-block;
-        -webkit-padding-start: 5px;
-        -webkit-margin-before: 0;
-        float: right;
-      }
-    
-      #header {
-        padding-top: 20px;
-        text-align: left;
-        padding-left: 10px;
-        padding-bottom: 15px;
-      }
-    }
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 .sling {
     display: inline-block;
