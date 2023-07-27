@@ -208,10 +208,9 @@ ID RULES
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 .sling {
-    display: inline-block;
+    display: block;
     -webkit-padding-start: 5px;
     -webkit-margin-before: 0;
-    float: right;
   }
 
   #header {
