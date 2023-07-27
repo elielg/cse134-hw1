@@ -149,8 +149,8 @@ ID RULES
   }
 
   #portrait{
-    height: 10%;
-    width: 10%; /* Assuming the width and height are the same for a perfect circle */
+    height: 20vh;
+    width: 20vh; /* Assuming the width and height are the same for a perfect circle */
     float: right;
     margin: 80px 0; /* 80px top and bottom margin, 0 left and right margin */
     border-radius: 50%;
