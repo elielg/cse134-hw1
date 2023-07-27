@@ -208,9 +208,11 @@ ID RULES
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 .sling {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    border: 1px solid black; 
+    text-align: center;
+    align-items: start;  
   }
 
   #header {
