@@ -115,12 +115,12 @@ ID RULES
 */
 #header {
     position: fixed;
-    top: 0;
-    left: 0;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-align: center;
-    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw;
     background-color: #EDF4F2;
     line-height: 100px;
     font-size: 15px;
@@ -210,11 +210,10 @@ ID RULES
 .sling {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: -100px; 
   }
 
   #header {
-    padding-top: 20px;
+
     text-align: left;
     padding-left: 10px;
     padding-bottom: 15px;
