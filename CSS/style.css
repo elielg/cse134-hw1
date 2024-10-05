@@ -194,13 +194,13 @@ li {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    align-items: start;
     font-family: "Hind Madurai";
-    font-size: 12pt;
+    font-size: 15pt;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 
